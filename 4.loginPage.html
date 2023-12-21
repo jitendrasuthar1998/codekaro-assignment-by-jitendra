@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .login-container{
+            width: 400px;
+            margin:5% auto;
+            text-align: center;
+        }
+
+        fieldset{
+            border: none;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top:10px;
+            height: 50px;
+        }
+
+        footer{
+            color:gray
+        }
+
+        a{
+            color:black
+        }
+
+        .btn{
+            background-color: black;
+            color:white;
+            padding:15px 30px;
+            border:none;
+            font-size: 20px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Flodesk</h1>
+        <p>Welcome back!</p>
+        <fieldset>
+            <input type="email" placeholder="Enter your email" name="email" id="email" />
+            <input type="password" placeholder="Enter your password" name="email" id="email" />
+        </fieldset>
+        <button class="btn">Login in to Flodesk</button>
+        <p>Not a member? <a href="#">Sign up</a></p>
+        <p><a href="#">Forgot your password?</a></p>
+        <footer>
+            By continuing, you agree to Flodesk's <a href="#">terms</a> and acknowledge you've read our <a href="#">privacy policy</a>.
+        </footer>
+    </div>
+</body>
+</html>
