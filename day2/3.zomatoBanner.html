@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zomato Banner</title>
-
+    <script src="https://kit.fontawesome.com/16e208dd94.js" crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .banner{
-            width:100%;
-            height: 700px;
-            padding:10px;
+
+        .banner {
+            width: 100%;
+            height: 500px;
+            padding: 10px;
             border-radius: 10px;
             position: relative;
         }
 
-        .banner-img{
+        .banner-img {
             border-radius: 10px;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .banner-content{
+        .banner-content {
             position: absolute;
-            top:30%;
-            left:30%;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+
             text-align: center;
             color: white;
         }
 
-        .banner-content h1{
+        .banner-content h1 {
             font-size: 80px;
             font-weight: bolder;
         }
 
-        .banner-content h2{
+        .banner-content h2 {
             font-size: 40px;
+        }
+
+        input {
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-container {
+            background-color: white;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .fa-map-marker {
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        .fa-caret-down,
+        .fa-magnifying-glass {
+            color: gray;
+            font-size: 20px;
+        }
+
+        .search-address {
+            display: flex;
+            align-items: center;
+            padding: 14px;
+            height: 100%;
+        }
+
+        i {
+            margin-right: 10px;
         }
     </style>
 </head>
+
 <body>
     <div class="banner">
         <img src="assets/food.avif" alt="food" class="banner-img">
@@ -52,8 +95,13 @@
             <h2>Discover the best food & drinks in Jodhpur</h2>
             <div class="search-container">
                 <div class="search-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Enter Address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <input type="text" spellcheck="false" placeholder="Enter Address" value="Jodhpur, Rajasthan">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="search-address">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" spellcheck="false" placeholder="Search for restaurant, cuisine or a dish">
                 </div>
             </div>
         </div>

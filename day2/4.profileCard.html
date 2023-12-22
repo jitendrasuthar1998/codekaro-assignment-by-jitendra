@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .profile-card {
+            width: 400px;
+            margin: 30px auto;
+            position: relative;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+        }
+
+        .profile-bg {
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .profile-header {
+            /* height: 300px; */
+            width: 100%;
+            position: relative;
+        }
+
+        .user {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid white;
+            position: absolute;
+            left: 35%;
+            z-index: 10;
+            bottom: -50px
+        }
+
+        .profile-description {
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 30px
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="https://source.unsplash.com/1600x600/?mountains" class="profile-bg" alt="">
+            <img src="assets/jitendra1.jpg" class="user" alt="">
+        </div>
+        <div class="profile-description">
+            <h2>Jitendra Suthar</h2>
+            <h2>Frontend Developer (ReactJS)</h2>
+        </div>
+    </div>
+</body>
+
+</html>
